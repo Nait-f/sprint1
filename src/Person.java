@@ -1,7 +1,15 @@
 public class Person {
     int x, y; // координаты персонажа
-    String image = "\\uD83E\\uDDD9\\u200D"; // вид персонажа на поле
+    String image = "\uD83E\uDDD9\u200D"; // вид персонажа на поле
     int live = 3; // количество жизней
+
+    public int getY() {
+        return y;
+    }
+
+    public int getX() {
+        return x;
+    }
 
 
     void move(int x, int y){

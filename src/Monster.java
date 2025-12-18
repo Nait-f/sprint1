@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 public class Monster {
 
-
-
-    private final String Dragon = "\uD83E\uDDDF\u200D";
+    protected String image = "\uD83E\uDDDF\u200D";
     private int x, y;
     Random r = new Random();
 
@@ -13,12 +11,12 @@ public class Monster {
 
 
     Monster(int size) {
-        this.x = r.nextInt(size - 1);
+        this.x = r.nextInt(size);
         this.y = r.nextInt(size);
     }
 
     public String getImage() {
-        return Dragon;
+        return this.image;
     }
 
     public int getY() {
@@ -33,7 +31,7 @@ public class Monster {
         return perY - 1 == this.y && perX - 1 == this.x;
     }
 
-    public boolean taskMonster() {
+    public boolean taskMonster(int difGame) {
         System.out.println("Решите задачу:");
         int x = r.nextInt(100);
         int y = r.nextInt(100);
@@ -49,3 +47,4 @@ public class Monster {
         return false;
     }
 }
+
