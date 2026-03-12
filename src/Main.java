@@ -44,7 +44,7 @@ public class Main {
 
         int count_monster = size * size - size - 1;
 
-//////////////////    НУЖНО
+////////////////// НУЖНО
         Monster[] arrMonster = new Monster[count_monster + 1];
         Monster test;
         while (count <= count_monster) {
