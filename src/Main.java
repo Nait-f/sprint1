@@ -13,11 +13,7 @@ public class Main {
         person.x = 1;
         person.y = 3;
         int count = 0;
-        
-        
-        /* здесь необходимо рассказать про переполнение и про другие типы данных
-            int personLive = 2147483649; // мало ли кто-то захочет сделать ооочень много жизней
-         */
+
 
     ///    String monster = "\uD83E\uDDDF\u200D";
 
@@ -54,7 +50,7 @@ public class Main {
             } else if (z ==1){
                 test = new BigMonster(size);
             } else {
-                test = new Dragon(size);
+                test = new Cat(size);
             }
 
 
